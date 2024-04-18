@@ -1,0 +1,98 @@
+<mxfile host="65bd71144e">
+    <diagram id="A10vdJJ0v5N7dy5QLH2n" name="第 1 页">
+        <mxGraphModel dx="1176" dy="999" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="7" value="" style="edgeStyle=none;html=1;" parent="1" source="3" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Person" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="95" y="215" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="" style="edgeStyle=none;html=1;" parent="1" source="4" target="9" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="构造函数" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="245" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" style="edgeStyle=none;html=1;entryX=0.442;entryY=0.033;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="5" target="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="190" y="130" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="290" y="180"/>
+                            <mxPoint x="210" y="180"/>
+                            <mxPoint x="122" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="" style="edgeStyle=none;html=1;" parent="1" source="5" target="24" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Person,prototype" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="235" y="215" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="实例原型" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="255" y="245" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="prototype" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="200" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" style="edgeStyle=none;html=1;" parent="1" source="9" target="6" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="person1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="90" y="355" width="70" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="实例" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="385" width="50" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="__proto__" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="186" y="310" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="constructor" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="150" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="" style="edgeStyle=none;html=1;" parent="1" source="24" target="27" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Object,prototype" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="450" y="215" width="110" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="__proto__" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="null" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="660" y="215" width="40" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="29" value="__proto__" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
+                    <mxGeometry x="570" y="200" width="80" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun3&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; console.&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;log&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c;&quot;&gt;fun3&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun2&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun3&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun1&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun2&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;fun1&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="150" y="560" width="165" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="31" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="510" width="120" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="global context" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="750" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="fun1 context" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="690" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="fun2 context" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="630" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="fun3 context" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="440" y="570" width="120" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="&lt;div style=&quot;color: rgb(248, 248, 242); background-color: rgb(40, 42, 54); font-family: Consolas, &amp;quot;Courier New&amp;quot;, monospace; font-weight: normal; font-size: 14px; line-height: 19px;&quot;&gt;&lt;div&gt;&lt;span style=&quot;color: #6272a4;&quot;&gt;// case 1&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;var&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c;&quot;&gt;global scope&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;checkscope&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;var&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c;&quot;&gt;local scope&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;console.&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;log&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;checkscope&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()) &lt;/span&gt;&lt;span style=&quot;color: #6272a4;&quot;&gt;// local scope&lt;/span&gt;&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;span style=&quot;color: #6272a4;&quot;&gt;// case2&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;var&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c;&quot;&gt;global scope&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;checkscope&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;var&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f1fa8c;&quot;&gt;local scope&lt;/span&gt;&lt;span style=&quot;color: #e9f284;&quot;&gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;function&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; &lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;f&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(){&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; scope;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; }&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;&amp;nbsp; &lt;/span&gt;&lt;span style=&quot;color: #ff79c6;&quot;&gt;return&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt; f&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;}&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;console.&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;log&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #50fa7b;&quot;&gt;checkscope&lt;/span&gt;&lt;span style=&quot;color: #f8f8f2;&quot;&gt;()()) &lt;/span&gt;&lt;span style=&quot;color: #6272a4;&quot;&gt;// local scope&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-60" y="1030" width="360" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="" style="shape=partialRectangle;whiteSpace=wrap;html=1;bottom=1;right=1;left=1;top=0;fillColor=none;routingCenterX=-0.5;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="1060" width="120" height="380" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
