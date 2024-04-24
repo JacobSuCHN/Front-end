@@ -830,3 +830,77 @@ Event Loop
 
 ## 代码组合   
 
+# ES6 & ESNext 规范及编程工具简介
+
+## let
+
+```js
+for (var i = 0; i < 5; i++) {
+    setTimeout(function() {
+        console.log(i); // 5, 5, 5, 5, 5
+    }, 1000);
+}
+```
+
+let 是块级作用域下的变量声明
+
+### 存储位置
+
+var 变量存储在当前执行上下文中的全局变量存储区
+let 变量存储在词法环境（词法分析、语义分析、代码生成）
+
+### 特性
+
+var 变量提升
+let 存储在词法环境，不存在提升，形成暂时性死区（词法环境）
+const 跟let特性类似，只是const多了一层常量的处理
+
+向上查找时，在作用域中有声明，且在查找之后，不会再次向上查找，会报错
+
+```js
+let a = 1
+function fn() {
+  console.log(a);
+  let a = 2;
+}
+```
+
+typeof 有安全机制，未被定义的变量不会报错，对有定义未声明无效报错
+
+## class语法
+
+## 模板字符串
+
+## 结构语法
+
+## 箭头函数
+
+> 箭头函数与普通函数的区别
+
+- this指向，箭头函数this指向父级
+- 不能当作构造函数，不能new实例化对象
+- 无法使用arguments访问参数
+- 无法使用bind、apply、call改变this指向
+
+## 生成器 generator
+
+函数可中断
+
+await async 就是借助promise和generator
+
+## reflect
+
+反射是一种能够在运行时检查、修改对象、类和函数等程序结构的能力，通过反射，我们可以读取和修改对象属性、调用对象方法、定义新属性、修改原型等
+反射的优势：不关心传入需要变更对象的具体实现，只需要关注想要更改的属性
+反射，谈到反射就要结合代理
+
+get(target, key, receiver)
+set(target, key, value, receiver)
+receiver接受者决定this指向
+
+优势
+- 更明确的返回值
+- 异常的处理，set、get操作返回boolean告诉是否成功
+- 方法拓展
+- 对于对象操作的统一化
+
