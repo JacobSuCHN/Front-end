@@ -904,3 +904,164 @@ receiver接受者决定this指向
 - 方法拓展
 - 对于对象操作的统一化
 
+# TS
+
+为什么使用TS
+类型定义/数据类型规范 类型推导
+
+业务代码 三方依赖 npm
+
+js+d.ts
+
+ts flow
+
+## 声明空间
+
+```js
+class Foo {}
+interface Bar {}
+type Bas = {}
+
+let foo: Foo
+let bar: Bar
+let bas: Bas
+```
+
+类型声明空间
+变量声明空间
+
+tsconfig includes: global.d.ts
+global.d.ts
+
+```js
+// 类型注解
+const num:number = 123
+
+function sum(a:number, b:number):number{
+    return a+b
+}
+```
+
+```js
+let num: number
+let str: string
+let bool: boolean
+
+num=123
+let numList: Array<number|string> // (string | number)[]
+
+numList = [1,'1']
+
+// interface 外联接口
+
+interface Person {
+    name:string;
+    age?:number;
+}
+
+let person: Person
+person = {
+    name:"jssx",
+}
+
+
+// 内联类型
+let person2:{
+    name:string;
+    age:number
+} = {
+    name:"jssx",
+    age:24
+}
+
+
+// 特殊类型
+// any null undefined void
+let num:any
+let str:string
+// strictNullChecks:true 下面代码报错
+// str=null
+// str=undefined
+
+function sendLog(msg:string):void{
+    console.log(msg)
+}
+
+type noop = ()=>void
+
+
+// 泛型
+function reverse<T>(items:T[]):T[]{
+    const list = [];
+    for(let i =items.length-1;i>=0;i--){
+        list.push(items[i])
+    }
+        
+    return list
+}
+
+const x=[1,2,3]
+let reverseX = reverse(x)
+
+// 交叉类型
+// a b
+function a<T extends object,U extends object>(name:T,age:U):T&U{
+    return {
+        ...name,
+        ...age
+    }
+}
+
+// 元组类型
+let b:[string,number]
+b=['1',1]
+
+type cType= string|number //type:类型的结合 interface：数据结构的描述
+let c:cType='123'
+
+interface Shape{
+    x:number;
+    y:number;
+}
+
+interface Rectangele extends Shape{
+    width:number;
+    height:number;
+}
+
+const r:Rectangele = {
+    x:1,
+    y:1,
+    width:20,
+    height:40
+}
+
+// @types/react -> devDependencies
+// react -> dependencies
+
+
+interface Point{
+    x:number;
+    y:number;
+}
+
+class MyPoint implements Point{
+    x:number;
+    y:number;
+    constructor(x:number,y:number){
+        this.x=x;
+        this.y=y
+    }
+}
+
+enum State {
+    sucess,
+    fail
+}
+
+// 类型约束
+// typeof instanceof in
+```
+
+# ES6 项目实战
+
