@@ -269,7 +269,7 @@ const Child = defineAsyncComponent(()=>import('./components/Child.vue'))
 ## 自定义指令
 > 性能优化
 
-```js
+```html
 <script setup>
 // 在模板中启用 v-focus
 const vFocus = {
@@ -282,7 +282,167 @@ const vFocus = {
 </template>
 ```
 
+# Vue-cli
+
+Vue CLI 是一个基于 Vue.js 进行快速开发的完整系统，提供：
+
+- 通过 `@vue/cli` 实现的交互式的项目脚手架
+- 通过 `@vue/cli` + `@vue/cli-service-global` 实现的零配置原型开发
+- 一个运行时依赖 (`@vue/cli-service`)，该依赖
+  - 可升级；
+  - 基于 webpack 构建，并带有合理的默认配置
+  - 可以通过项目内的配置文件进行配置
+  - 可以通过插件进行扩展
+
+- 一个丰富的官方插件集合，集成了前端生态中最好的工具
+- 一套完全图形化的创建和管理 Vue.js 项目的用户界面
+
+commander + inquirer
+
+options -> template
+
+webpack.config.js
+
+ejs template generate template 生成模板 -> ejs vue create Test -> App.vue
+
+node_module/libs-> .bin vue node vue.js vue ->
+
+# VueRouter & SSR
+
+## API
+
+- 前端路由 SPA 前端管理页面跳转
+- 后端路由 url不同 都会向服务器发送请求 =>html
+  - 优点：减轻前端压力 html由服务器拼接
+  - 缺点：用户体验差
+
+### 模式
+
+- hash模式
+  localhost:8080/#home => 组件切换
+- history模式
+  localhost:8080/home
+  => dist部署到服务器
+
+  ```js
+  location{
+    root  /usr/local/nginx/html/dist;
+    index index.html index.htm
+    try_files $uri $uri/ /index.html
+  }
+  ```
+
+### 简单使用
+
+```js
+import Vue from 'vue'
+import { createRouter, createWebHistory } from "vue-router";
+
+// 创建和挂载
+const routes = [
+  { path: '/', component: { template: '<div>Home</div>' } },
+  { path: '/about', component: { template: '<div>About</div>' } },
+]
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+})
+
+const app = Vue.createAPP({})
+
+app.use(router)
+
+app.mount('#app')
+
+// 组件内使用
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+console.log(router.createRoute);
+router.back()
+// ...
+```
+
+### 动态参数路由
+
+```js
+const User = {
+  template: '<div>User</div>',
+}
+
+// 这些都会传递给 `createRouter`
+const routes = [
+  // 动态字段以冒号开始
+  { path: '/users/:id', component: User },
+]
+// /users/johnny 和 /users/jolyne 这样的 URL 都会映射到同一个路由。
+// 用冒号 : 表示。当一个路由被匹配时，它的 params 的值将在每个组件中以 this.$route.params 的形式暴露出来。
+// 因此，我们可以通过更新 User 的模板来呈现当前的用户 ID
+
+const User = {
+  template: '<div>User {{ $route.params.id }}</div>',
+  // created监听路由变化
+  created( ){
+    this.$watch(
+      () => this.$route.params,
+      () => {
+        console.log();
+      }
+    )
+  },
+  // 导航守卫监听路由变化
+  async beforeRouteUpdate(to, from){
+    console.log(to, from);
+  }
+}
+// users/1 => users/2 created不会再次执行
+```
+
+### 编程导航
+
+```js
+const username = 'eduardo'
+// 我们可以手动建立 url，但我们必须自己处理编码
+router.push(`/user/${username}`) // -> /user/eduardo
+// 同样
+router.push({ path: `/user/${username}` }) // -> /user/eduardo
+// 如果可能的话，使用 `name` 和 `params` 从自动 URL 编码中获益
+router.push({ name: 'user', params: { username } }) // -> /user/eduardo
+// `params` 不能与 `path` 一起使用
+router.push({ path: '/user', params: { username } }) // -> /user
+```
+
+```js
+router.push({ path: '/home', replace: true })
+// 相当于
+router.replace({ path: '/home' })
+```
 
 
+### 不同模式
 
+```js
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
+
+const router = createRouter({
+  // history: createWebHashHistory(),
+  history: createWebHistory(),
+  routes: [
+    //...
+  ],
+})
+```
+
+## 手写vue-router
+
+1. 如何监测url变化
+2. 如何改变url不引起页面刷新
+3. 如何支持hash和history模式
+  hash hashchange popstate
+  history popstate push replace
+- router-link
+- router-view
+
+## SSR
 
